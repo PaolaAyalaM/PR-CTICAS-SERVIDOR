@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, iniial-scale=1.0">
+        <title>Imprimir Texto con JavaScript</title>
+    </head>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+
+    <body>
+        <h1>IMPRIMIR MENSAJE</h1>
+        <p>Haz click en el boton para imprimir un mensaje en la pagina:</p>
+        <button onclick="imprimirMensaje()">Click para Imprimir</button>
+        <p></p>
+
+        <script>
+            function imprimirMensaje() {
+                document.getElementById("mensaje").innerHTML="Hola, mi nombre es Paola ;)"
+            }
+        </script>
+
+        <div id="mensaje"></div>
+    </body>
+</html>
