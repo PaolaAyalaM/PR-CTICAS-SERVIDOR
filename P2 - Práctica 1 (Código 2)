@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset=UTF-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imprimir Texto con JavaScript</title>
+    </head>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+    <body>
+        <h1>Desarrolla Apps que se ejecutan en el servidor</h1>
+        <p>Haz click en el boton para ver mis datos:</p>
+        <button onclick="imprimirMensaje()">Ver Datos</button>
+
+        <script>
+            function imprimirMensaje() {
+                alert("Hola, mi nombre es Paola Ayala Mendoza y me encuentro en el modulo de Desarrolla Apps en el Servidor");
+            }
+        </script>
+    </body>
+</html>
+    
