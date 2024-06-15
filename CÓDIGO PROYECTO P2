@@ -1,0 +1,261 @@
+. *<!DOCTYPE html>*:
+
+ - Esta declaración define el tipo de documento, garantiza que el navegador interprete el código correctamente.
+
+2. *<html lang="es">*:
+
+ - Indica que el idioma del documento es español
+
+3. *<head>... </head>*:
+
+ - La sección <head> contiene metadatos y enlaces necesarios para que la página funcione adecuadamente.
+
+4. *<meta charset="UTF-8">*:
+
+ - Establece la codificación de caracteres como UTF-8, permitiendo el uso de caracteres especiales 
+
+5. *<meta name="viewport" content="width=device-width, initial-scale=1.0">*:
+
+ -Se adapta a diferentes tamaños de pantalla, como dispositivos móviles.
+
+6. *<title> ... </title>*:
+
+ - Define el título de la página, que aparece en la pestaña .
+
+7. *<style> ... </style>*:
+
+ - Contiene estilos CSS internos para la página, controlando el diseño y apariencia.
+
+8. *body { ... }*:
+
+ - Define estilos para el cuerpo del documento, como la fuente, márgenes, y color de fondo.
+
+9. *header { ... }*:
+
+ - Establece el estilo del encabezado, como color de fondo, texto y padding para mantener un diseño .
+
+10. *nav ul { ... }*:
+
+ - Define el estilo de la lista de menu y centrando el texto.
+
+11. *nav ul li { ... }*:
+
+ - Establece que los elementos de la lista se muestren en línea y tengan un espacio entre ellos.
+
+12. *nav ul li a { ... }*:
+
+ - Define el estilo para los enlaces de navegación, sin subrayado y con color negro.
+
+13. *main { ... }*:
+
+ - Establece el estilo para la sección principal, con padding para dar espacio interno.
+
+14. *section { ... }*:
+
+ - Define el margen inferior para separar las secciones.
+
+15. *footer { ... }*:
+
+ - Establece el estilo del pie de página, con color de fondo, alineación y posición en la parte inferior.
+
+16. *h2 { ... }*:
+
+ - Establece el color para los encabezados.
+
+17. *table { ... }*:
+
+ - Define el estilo para la tabla, asegurando que ocupe el ancho completo
+
+18. *th, td { ... }*:
+
+ - Define padding, alineación y borde inferior para las celdas de la tabla.
+
+19. *th { ... }*:
+
+ - Agrega un color de fondo más claro para las celdas del encabezado de la tabla.
+
+20. *<header style="display: flex; ..."> ... </header>*:
+
+ - Usa flex para alinear el texto y la imagen del encabezado. Se incluye el título y un espacio para el logo.
+
+21. *<nav> ... </nav>*:
+
+ - Crea una sección de navegación con una lista de elementos para las distintas páginas del sitio.
+
+22. *<main> ... </main>*:
+
+ - Define el área del documento 
+
+23. *<section id="informacion"> ... </section>*:
+
+ - Crea una sección para información relevante
+
+24. *<section id="introduccion"> ... </section>*:
+
+ - Sección adicional para proporcionar información más detallada
+
+25. *<section id="tabla"> ... </section>*:
+
+ - Crea una sección para incluir una tabla que muestra los diferentes recursos disponibles
+
+26. *<div style="text-align: center;"> ... </div>*:
+
+ - Un contenedor para centrar una imagen 
+
+27. *<footer style="margin-top: 20px;"> ... </footer>*:
+
+ - Pie de página para proporcionar información de derechos de autor etc..
+
+Codigo php
+
+En la línea 5, se establece una conexión a la base de datos MySQL utilizando la clase mysqli.
+
+El tercer parámetro vacío ("") es para la contraseña, asumiendo que no hay contraseña establecida.
+
+En la línea 8, se verifica si hay un error de conexión. Si hay un error, se muestra un mensaje de error y se termina la 
+
+ejecución del script con la función die().
+
+Las líneas 13 a 18 asignan los valores recibidos del formulario a las variables correspondientes.
+
+// Establecer la conexión a la base de datos
+
+$conexion = new mysqli("localhost", "root", "", "contact");
+
+// Verificar la conexión
+
+if ($conexion->connect_error) {
+
+ die("Error en la conexión: " . $conexion->connect_error);
+
+}. *<!DOCTYPE html>*:
+
+ - Esta declaración define el tipo de documento, garantiza que el navegador interprete el código correctamente.
+
+2. *<html lang="es">*:
+
+ - Indica que el idioma del documento es español
+
+3. *<head>... </head>*:
+
+ - La sección <head> contiene metadatos y enlaces necesarios para que la página funcione adecuadamente.
+
+4. *<meta charset="UTF-8">*:
+
+ - Establece la codificación de caracteres como UTF-8, permitiendo el uso de caracteres especiales 
+
+5. *<meta name="viewport" content="width=device-width, initial-scale=1.0">*:
+
+ -Se adapta a diferentes tamaños de pantalla, como dispositivos móviles.
+
+6. *<title> ... </title>*:
+
+ - Define el título de la página, que aparece en la pestaña .
+
+7. *<style> ... </style>*:
+
+ - Contiene estilos CSS internos para la página, controlando el diseño y apariencia.
+
+8. *body { ... }*:
+
+ - Define estilos para el cuerpo del documento, como la fuente, márgenes, y color de fondo.
+
+9. *header { ... }*:
+
+ - Establece el estilo del encabezado, como color de fondo, texto y padding para mantener un diseño .
+
+10. *nav ul { ... }*:
+
+ - Define el estilo de la lista de menu y centrando el texto.
+
+11. *nav ul li { ... }*:
+
+ - Establece que los elementos de la lista se muestren en línea y tengan un espacio entre ellos.
+
+12. *nav ul li a { ... }*:
+
+ - Define el estilo para los enlaces de navegación, sin subrayado y con color negro.
+
+13. *main { ... }*:
+
+ - Establece el estilo para la sección principal, con padding para dar espacio interno.
+
+14. *section { ... }*:
+
+ - Define el margen inferior para separar las secciones.
+
+15. *footer { ... }*:
+
+ - Establece el estilo del pie de página, con color de fondo, alineación y posición en la parte inferior.
+
+16. *h2 { ... }*:
+
+ - Establece el color para los encabezados.
+
+17. *table { ... }*:
+
+ - Define el estilo para la tabla, asegurando que ocupe el ancho completo
+
+18. *th, td { ... }*:
+
+ - Define padding, alineación y borde inferior para las celdas de la tabla.
+
+19. *th { ... }*:
+
+ - Agrega un color de fondo más claro para las celdas del encabezado de la tabla.
+
+20. *<header style="display: flex; ..."> ... </header>*:
+
+ - Usa flex para alinear el texto y la imagen del encabezado. Se incluye el título y un espacio para el logo.
+
+21. *<nav> ... </nav>*:
+
+ - Crea una sección de navegación con una lista de elementos para las distintas páginas del sitio.
+
+22. *<main> ... </main>*:
+
+ - Define el área del documento 
+
+23. *<section id="informacion"> ... </section>*:
+
+ - Crea una sección para información relevante
+
+24. *<section id="introduccion"> ... </section>*:
+
+ - Sección adicional para proporcionar información más detallada
+
+25. *<section id="tabla"> ... </section>*:
+
+ - Crea una sección para incluir una tabla que muestra los diferentes recursos disponibles
+
+26. *<div style="text-align: center;"> ... </div>*:
+
+ - Un contenedor para centrar una imagen 
+
+27. *<footer style="margin-top: 20px;"> ... </footer>*:
+
+ - Pie de página para proporcionar información de derechos de autor etc..
+
+Codigo php
+
+En la línea 5, se establece una conexión a la base de datos MySQL utilizando la clase mysqli.
+
+El tercer parámetro vacío ("") es para la contraseña, asumiendo que no hay contraseña establecida.
+
+En la línea 8, se verifica si hay un error de conexión. Si hay un error, se muestra un mensaje de error y se termina la 
+
+ejecución del script con la función die().
+
+Las líneas 13 a 18 asignan los valores recibidos del formulario a las variables correspondientes.
+
+// Establecer la conexión a la base de datos
+
+$conexion = new mysqli("localhost", "root", "", "contact");
+
+// Verificar la conexión
+
+if ($conexion->connect_error) {
+
+ die("Error en la conexión: " . $conexion->connect_error);
+
+}
