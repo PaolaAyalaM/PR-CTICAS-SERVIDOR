@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <tittle></tittle>
+    <style>
+        /*Estilos CSS */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6b0101;
+        }
+
+        header{
+            background-color: #f3e1ea;
+            color: #000000;
+            padding: 10px;
+            text-align: center;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 39px;
+        }
+
+        section{
+            padding: 20px;
+            margin: 20px;
+            background-color: #fce9fa;
+            border: 1px solid #000000;
+        }
+
+        form{
+            margin-bottom: 20px;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td{
+            border: 1px solid #e4a6a6;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JENNIE</h1>
+    </header>
+
+    <section>
+        <h2>Formulario de Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Imagenes y Video</h2>
+        <img src="data:image/jpeg;base64,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" alt="Imagen">
+        <video width="320" height="240" controls>
+            <source src="c:\Users\Programacion\Downloads\JENNIE - SOLO CHOREOGRAPHY UNEDITED VERSION.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>Sobre ella</h2>
+        <ul>
+            <li>Kim Jeni; Cheongdam, Seúl, 16 de enero de 1996</li>
+            <li>Miembro del grupo BLACKPINK</li>
+            <li>Agencia: ODDATELIER</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Discografia</h2>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Fecha de Lanzamiento</th>
+                
+            </tr>
+            <tr>
+                <td>SOLO- SINGLE</td>
+                <td>15 Noviembre 2018</td>
+                
+            </tr>
+            <tr>
+                <td>You & Me</td>
+                <td>19 Dicimbre 2023</td>
+            
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
